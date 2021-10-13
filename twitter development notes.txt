@@ -1,0 +1,43 @@
+-- establish API post for message / direct message
+- integrate with twitter-text (githut) to ensure message will display correctly on Twitter
+
+-- python upgrading in windows without using path --
+C:\>assoc .py
+.py=Python.File
+
+C:\>ftype Python.File
+Python.File="C:\Windows\py.exe" "%1" %*
+
+py -0 (latest version)
+
+
+VSCode notes for Python setup
+don't use the python terminal or powershell. Open a command prompt
+c:\> python -m venv [directory]
+set it as active
+c:\> env\Scripts\activate.bat
+
+
+
+back in VScode press [Ctrl ,] and enter the path you created in the above set (where the virutal environment was installed)
+
+It should now be the default Python interperator
+
+on the .py file in question open it and click on the bottom left of the app where it details the Python version
+Select Interpreter input box will appear at the top of the app (type the full path to your virtual python environment)
+
+-----
+
+twitter development notes
+
+authentication = use yaml file to stores bearer token
+
+
+FLASK
+
+from cmd prompt
+set venv as activate C:\Users\unknown\blinker_dev_python\scripts\activate.bat
+(base) C:\Users\unknown\blinker_dev>set FLASK_APP=user_lookup
+(base) C:\Users\unknown\blinker_dev>flask run
+
+
